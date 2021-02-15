@@ -30,23 +30,16 @@ module.
 %package -n	%{libname}
 Summary:        Library for Lime Suite
 Group:          System/Libraries
-Requires:       %{name}-udev
 
 %description -n	%{libname}
 Lime Suite is a collection of software supporting several hardware
 platforms and other tools for developing with LMS7-based hardware.
 
-%package udev
-Summary:        Udev rules for LimeSDR
-Group:          Hardware/Other
-
-%description udev
-Udev rules for Lime Suite
-
 %package -n	%{devname}
 Summary:        Development files for libLimeSuite
 Group:          Development/Libraries/C and C++
 Requires:       %{libname} = %{EVRD}
+Provides:	%{name}-devel = %{EVRD}
 
 %description -n	%{devname}
 Libraries and header files for developing applications that want to make
@@ -97,8 +90,6 @@ export CXX=g++
 %{_bindir}/LimeQuickTest
 %dir %{_datadir}/Lime
 %{_datadir}/Lime/Desktop
-
-%files udev
 %{_udevrulesdir}/64-limesuite.rules
 
 %files -n %{libname}
