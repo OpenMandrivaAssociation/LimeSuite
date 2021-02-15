@@ -17,6 +17,7 @@ BuildRequires:  wxgtku3.0-devel
 BuildRequires:  pkgconfig(SoapySDR)
 BuildRequires:  pkgconfig(libusb)
 BuildRequires:  pkgconfig(udev)
+BuildRequires:  pkgconfig(glu)
 
 %description
 Lime Suite is a collection of software supporting several hardware
