@@ -10,7 +10,7 @@ License:        Apache-2.0
 Group:          Productivity/Hamradio/Other
 URL:            https://myriadrf.org/projects/lime-suite/
 #Git-Clone:     https://github.com/myriadrf/LimeSuite.git
-Source:         https://github.com/myriadrf/LimeSuite/archive/%{version}/%{name}-%{version}.tar.gz
+Source0:	https://github.com/myriadrf/LimeSuite/archive/v%{version}.tar.gz
 BuildRequires:  cmake
 BuildRequires:  gnuplot
 BuildRequires:  wxgtku3.0-devel
