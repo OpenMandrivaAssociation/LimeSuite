@@ -3,7 +3,7 @@
 %define devname %mklibname -d %{name}
 
 Name:           LimeSuite
-Version:        20.10.0
+Version:        23.11.0
 Release:        1%{?dist}
 Summary:        Collection of software supporting LMS7-based hardware
 License:        Apache-2.0
